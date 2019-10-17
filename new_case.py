@@ -4,14 +4,12 @@ import sys
 import fileinput
 import re
 
-
 #enter case name to be used as file name
 case_name = input("Enter case name: ")
 
 #Copy case template to Analysis directory
 os.chdir("C:\\Analysis\\scripts\\new_case_setup")
 shutil.copytree("new_case_template","C:\\Analysis\\tempcasename")
-
 
 #Make case directory on desktop
 os.chdir("C:\\Users\\username\\Desktop")
